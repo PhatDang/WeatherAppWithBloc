@@ -39,9 +39,6 @@ class MyApp extends StatelessWidget {
   }
 }
 
-
-
-
 class SearchPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -53,7 +50,6 @@ class SearchPage extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
 
-
         Center(
             child: Container(
               child: FlareActor("assets/WorldSpin.flr", fit: BoxFit.contain, animation: "roll",),
@@ -61,8 +57,6 @@ class SearchPage extends StatelessWidget {
               width: 300,
             )
         ),
-
-
 
         BlocBuilder<WeatherBloc, WeatherState>(
           builder: (context, state){
